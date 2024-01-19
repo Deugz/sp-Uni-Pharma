@@ -63,8 +63,48 @@ html_theme_options = {
             "name": "&nbsp &nbsp &nbsp &nbsp 🎓 Physio",
             "attributes": {"target": "_blank"},
         },
+        {
+            "url": "https://deugz.github.io/jb-BEMN/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp 🌲 BEMN",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "url": "https://deugz.github.io/jb-Bio-Cel/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp 🦠 Bio Cell",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "url": "https://deugz.github.io/jb-ATGB/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp ⚠ ATGB",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "url": "https://deugz.github.io/jb-Bio-Mol/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp ⚛ Bio Mol",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "url": "https://deugz.github.io/jb-Ch-Therapeutique/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp Chimie Thérapeutique",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "url": "https://deugz.github.io/jb-QPS/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp QPS",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "url": "https://deugz.github.io/jb-Sc-Analytique/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp Sciences Analytique",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "url": "https://deugz.github.io/jb-VASM/_build/html/intro.html",
+            "name": "&nbsp &nbsp &nbsp &nbsp VASM",
+            "attributes": {"target": "_blank"},
+        },
     ],
-    "header_links_before_dropdown": 5,    
+    "header_links_before_dropdown": 6,    
     "icon_links": [
         {
             "name": "GitHub",

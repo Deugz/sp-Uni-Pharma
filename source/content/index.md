@@ -16,13 +16,15 @@ Introduction/Roadmap
 :hidden:
 
 Sections/Panorama
-Sections/Universite
-Sections/Pharmagest
-Sections/Officine
-Sections/Recherche
-Sections/Industrie
-Sections/Politique
-
+Sections/ATGB
+Sections/BEMN
+Sections/Bio-Cell
+Sections/Bio-Mol
+Sections/Ch-The
+Sections/Physio
+Sections/QPS
+Sections/Sc-Anal
+Sections/VASM
 ```
 
 ```{toctree}

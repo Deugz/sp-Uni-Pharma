@@ -30,29 +30,19 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
-<br>
-<br>
+# La Fac de Pharma
 
-:::{image} _static/Title/physio-pharm.svg
-:width: 100%
-:::
-
-***
+<p class="emphase"> du Futur ...</p>
 
 
-<br>
+J'envisage de créer une plateforme web dont la fonction est d'héberger une version digitalisé des cours de pharmacie (les ronéos).
 
-# La pharmacie
+## Objectifs
 
-<p class="emphase"> Autrement ...</p>
+- Meilleur Apprentissage
 
-```{admonition} To Do
+- aide a l'observance
 
-- Commencer a travailler pour définir le concept:
-
-Crééer une plateforme sur laquel j'entend digitaliser les cours de pharmacie pour en faire une plateforme d'aide a l'observance
-
-```
 
 
 
