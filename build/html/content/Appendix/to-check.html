@@ -39,6 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/css/style_book_shell.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/style_flipping_card.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/style_wheel.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/bender.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -552,10 +553,15 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Introduction/Definition.html">Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Introduction/Objectifs.html">Objectifs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Introduction/Roadmap.html">Roadmap</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/Definition/Definition_Main.html">Definition</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Introduction/Objectifs/Objectifs_Main.html">Objectifs</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Objectifs/Note.html">✅ Bloc-Note, Organiseur, Journal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Objectifs/Pedagogie.html">🔧 Outil Pédagogique en ligne</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Objectifs/BDD-Connaissances.html">🔧 Base de Donnée de Connaissances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Objectifs/Partage.html">🔧 Plateforme de Partage &amp; de Dialogue</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/Roadmap/Roadmap_Main.html">Roadmap</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sections</span></p>
 <ul class="nav bd-sidenav">

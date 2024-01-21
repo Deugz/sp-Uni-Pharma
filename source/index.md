@@ -30,14 +30,94 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
-# La Fac de Pharma
+<br>
+<br>
 
-<p class="emphase"> du Futur ...</p>
+:::{image} _static/Title/les-etudes-de-.svg
+:width: 100%
+:::
+
+<br>
+<br>
+<br>
+<br>
+
+# Pharmacie
+
+<br>
+
+***
+
+<br>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 8
+
+<p class="emphase">J'envisage de créer une plateforme web dont la fonction est d'héberger une version digitalisé des cours de pharmacie (les ronéos), tout au long de mon cursus.</p>
 
 
-J'envisage de créer une plateforme web dont la fonction est d'héberger une version digitalisé des cours de pharmacie (les ronéos).
 
-## Objectifs
+:::
+
+:::{grid-item}
+:columns: 4
+
+```{figure} _static/Logo/Pharma-Logo.svg
+---
+width: 100%
+name: Pharma-Logo
+---
+
+```
+
+
+:::
+
+::::
+
+## Mon Parcours
+
+
+```{note}
+
+Présentation, blabla
+
+```
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 8
+
+> Reprise d'étude passerelle blabla
+> Mettre liens
+
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+```{figure} _static/Logo/Universite-Bordeaux-RVB-01.png
+---
+width: 100%
+name: Universite-Bordeaux-RVB-01
+---
+
+```
+
+
+:::
+
+::::
+
+
+
+
+## Ce Projet
+
 
 - Meilleur Apprentissage
 

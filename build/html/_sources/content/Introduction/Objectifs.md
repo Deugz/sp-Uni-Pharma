@@ -1,5 +1,16 @@
 # Objectifs
 
+```{toctree}
+:maxdepth: 2
+:hidden:
+
+Objectifs/Note
+Objectifs/Archivage
+Objectifs/Partage
+```
+
+
+
 ## Meilleur Apprentissage
 
 ### Pedagogie
@@ -79,7 +90,14 @@ Ok
 
 ::::::
 
+```{note}
 
+- Calendrier de réactivation:
+- Boite de leitner
+
+Est-ce que c'est possible de le créer nous meme?
+
+```
 
 
 #### Les différentes Lectures
@@ -107,6 +125,8 @@ Creer tab item
 - Reflexion sur le plan
 - Correction ortographes
 - Lecture et implémentation des notes
+
+- Creation des cartes de Leitner (example)
 
 ##### Lecture 3    
     

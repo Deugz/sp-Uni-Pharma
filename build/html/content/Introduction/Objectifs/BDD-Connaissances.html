@@ -1,0 +1,862 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔧 Base de Donnée de Connaissances &#8212; Encyclopedia 3.A 0.0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/Cube.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/coffee_cup.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/kittons.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/style_book_shell.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/style_flipping_card.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/style_wheel.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/bender.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/assets/script/kittons.js"></script>
+    <script src="../../../_static/assets/script/script_flipping_card.js"></script>
+    <script src="../../../_static/assets/script/script_wheel.js"></script>
+    <script src="../../../_static/assets/script/scriptvideo.js"></script>
+    <script src="../../../_static/assets/script/slideshow.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Introduction/Objectifs/BDD-Connaissances';</script>
+    <link rel="shortcut icon" href="../../../_static/Pharma-Logo.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="🔧 Plateforme de Partage &amp; de Dialogue" href="Partage.html" />
+    <link rel="prev" title="🔧 Outil Pédagogique en ligne" href="Pedagogie.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/Pharma-Logo.svg" class="logo__image only-light" alt=" &nbsp Pharmacie &nbsp &nbsp"/>
+    <script>document.write(`<img src="../../../_static/Caducée_lauriers_Couleur.svg" class="logo__image only-dark" alt=" &nbsp Pharmacie &nbsp &nbsp"/>`);</script>
+  
+  
+    <p class="title logo__title"> &nbsp Université &nbsp </p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Home
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-physio/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp 🎓 Physio
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-BEMN/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp 🌲 BEMN
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Bio-Cel/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp 🦠 Bio Cell
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-ATGB/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp ⚠ ATGB
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Bio-Mol/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp ⚛ Bio Mol
+                  </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Ch-Therapeutique/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp Chimie Thérapeutique
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-QPS/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp QPS
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Sc-Analytique/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp Sciences Analytique
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-VASM/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp VASM
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Deugz/Encyclopedia-Home" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/Encyclopedia-Home/build/html/index.html" title="Home" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-house"></i></span>
+            <label class="sr-only">Home</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-profile/_build/html/intro.html" title="Profile" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-user"></i></span>
+            <label class="sr-only">Profile</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/ab-blog/_website/index.html" title="Blog" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-blog"></i></span>
+            <label class="sr-only">Blog</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-tools/_build/html/intro.html" title="Tools" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <label class="sr-only">Tools</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Home
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-physio/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp 🎓 Physio
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-BEMN/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp 🌲 BEMN
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Bio-Cel/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp 🦠 Bio Cell
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-ATGB/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp ⚠ ATGB
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Bio-Mol/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp ⚛ Bio Mol
+                  </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Ch-Therapeutique/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp Chimie Thérapeutique
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-QPS/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp QPS
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-Sc-Analytique/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp Sciences Analytique
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://deugz.github.io/jb-VASM/_build/html/intro.html">
+                    &nbsp &nbsp &nbsp &nbsp VASM
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Deugz/Encyclopedia-Home" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/Encyclopedia-Home/build/html/index.html" title="Home" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-house"></i></span>
+            <label class="sr-only">Home</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-profile/_build/html/intro.html" title="Profile" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-user"></i></span>
+            <label class="sr-only">Profile</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/ab-blog/_website/index.html" title="Blog" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-blog"></i></span>
+            <label class="sr-only">Blog</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-tools/_build/html/intro.html" title="Tools" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <label class="sr-only">Tools</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Definition/Definition_Main.html">Definition</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Objectifs_Main.html">Objectifs</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Note.html">✅ Bloc-Note, Organiseur, Journal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Pedagogie.html">🔧 Outil Pédagogique en ligne</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">🔧 Base de Donnée de Connaissances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Partage.html">🔧 Plateforme de Partage &amp; de Dialogue</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Roadmap/Roadmap_Main.html">Roadmap</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/Panorama.html">Panorama</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/ATGB.html">ATGB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/BEMN.html">BEMN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/Bio-Cell.html">Bio Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/Bio-Mol.html">Bio Mol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/Ch-The.html">Chimie Thérapeutique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/Physio.html">Physio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/QPS.html">QPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/Sc-Anal.html">Sciences Analytiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sections/VASM.html">VASM</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Appendix/to-check.html">To check</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Home</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="Objectifs_Main.html" class="nav-link">Objectifs</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">🔧 Base de Donnée de Connaissances</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="section" id="base-de-donnee-de-connaissances">
+<h1>🔧 Base de Donnée de Connaissances<a class="headerlink" href="#base-de-donnee-de-connaissances" title="Permalink to this heading">#</a></h1>
+<p class="emphase2">   
+<strong>Enrichir </strong> ✍  
+</p>
+<p class="emphase">De tes experiences de vie, ainsi que des <strong>connaissances aquises</strong></p>
+<div id="P1">
+<div id="subdiv2">
+<p>J’aimerais créer un outils de prise de note et d’idéation qui s’appuie sur des technologies open source pour donner aux gens l’opportunité de créer leur propre base de donnée de connaissances.</p>
+<ul class="simple">
+<li>Many benefits (lien vers How do I use …)<ul>
+<li>Add 1 Dimension (plan) vs hand written notebook (linear constrained by t)</li>
+</ul>
+</li>
+</ul>
+<p>Prouver qu’il est possible de prendre des notes sur internet en faisant en sorte que ca favorise les processus collaboratifs.</p>
+<ul class="simple">
+<li>Je pense que ca peut être un outils pour permettre aux personnes atteintes de TDAH de s’épanouir d’avantage dans leur workflow academic</li>
+</ul>
+<p>Personelement, à la manière d’un champignon qui se nourrit de la matière organique en décomposition pour grandir, je me sustante des nombreuses ressources d’internet pour construire mes r</p>
+<p>Je navigue dans ce terreau vertile qu’est internet et …</p>
+<p>tool. Your own social network cretaed consiusly.</p>
+<ul class="simple">
+<li>Promote collaboration</li>
+</ul>
+<p>Suis mes interets …</p>
+<p>Parcours étéroclite</p>
+<p>Le bénéfice de cette méthode (en plus des avantages d’avoir ce controle de ton profile sociale), c’est que Tu dispose d’un outils, qui marche en <strong>symbiose</strong> avec ton rythme de vie, puisque tu l’as créée en fonction (et ca va être un processus en évolution perpetuelle et donc iteratif).</p>
+</div>
+<div id="subdiv2">
+<div class="figure align-default" id="id1">
+<img alt="../../../_images/mycelium-1.jpg" src="../../../_images/mycelium-1.jpg" />
+<p class="caption"><span class="caption-text"><a class="reference external" href="http://www.monjardinenpermaculture.fr/" rel="noopener noreferrer" target="_blank">Source</a></span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</div>
+<br>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<p><lottie-player src="https://assets10.lottiefiles.com/packages/lf20_rbexkvmr.json"  background="transparent"  speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div id="coulour">
+<ul class="simple">
+<li><a class="reference external" href="https://deugz.github.io/jb-background/_build/html/intro.html" rel="noopener noreferrer" target="_blank">Planet Formation</a></li>
+<li>Scientific Publication</li>
+<li>Semantic Web</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<h1>Web <strong>3.</strong>0</h1>
+<p>Le Web 3.0, ou <strong>Web sémantique</strong>, est une évolution du Web qui vise à donner un sens plus profond aux données en ligne. L’une des technologies fondamentales du Web 3.0 est le langage sémantique, qui vise à définir des significations spécifiques pour les termes (métadonnées) et les relations entre les données (structures), avec pour but de rendre les informations mieux compréhensibles par les machines.</p>
+<p class="emphase">un centre de traitement de l' <strong>Information</strong> </p>
+<div class="figure align-default" id="complete-neuron-cell-diagram-fr">
+<a class="reference internal image-reference" href="../../../_images/Complete_neuron_cell_diagram_fr.svg"><img alt="../../../_images/Complete_neuron_cell_diagram_fr.svg" src="../../../_images/Complete_neuron_cell_diagram_fr.svg" width="100%" /></a>
+<p class="caption"><span class="caption-text">Neurone <span class="xref myst">Source</span> - liens vers jb-Physio</span><a class="headerlink" href="#complete-neuron-cell-diagram-fr" title="Permalink to this image">#</a></p>
+</div>
+<br>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p class="rubric">Construire</p>
+<br> 
+<a class="reference internal image-reference" href="../../../_images/cellule.png"><img alt="../../../_images/cellule.png" class="align-center" src="../../../_images/cellule.png" style="width: 60%;" /></a>
+<ul class="simple">
+<li>Artiste,</li>
+<li>Oueuvre d’art</li>
+</ul>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p class="rubric">Consolider</p>
+<br> 
+<a class="reference internal image-reference" href="../../../_images/myeline.png"><img alt="../../../_images/myeline.png" class="align-center" src="../../../_images/myeline.png" style="width: 50%;" /></a>
+<br>
+<ul class="simple">
+<li>Révision par les pères</li>
+<li>Oueuvre d’art</li>
+</ul>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p class="rubric">Disséminer</p>
+<br> 
+<a class="reference internal image-reference" href="../../../_images/synapse.png"><img alt="../../../_images/synapse.png" class="align-center" src="../../../_images/synapse.png" style="width: 50%;" /></a>
+<br>
+<ul class="simple">
+<li>Artiste,</li>
+<li>Oueuvre d’art</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\Introduction\Objectifs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Pedagogie.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">🔧 Outil Pédagogique en ligne</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Partage.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">🔧 Plateforme de Partage &amp; de Dialogue</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/content/Introduction/Objectifs/BDD-Connaissances.md">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Vincent Deguin.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

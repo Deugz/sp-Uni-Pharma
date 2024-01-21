@@ -2,29 +2,30 @@
 
 ```{toctree}
 :maxdepth: 2
-:caption: Introduction
+:caption: 💎 Le Projet
 :hidden:
 
-Introduction/Definition
-Introduction/Objectifs
-Introduction/Roadmap
+Projet/Definition/Definition_Main
+Projet/Objectifs/Objectifs_Main
+Projet/Roadmap/Roadmap_Main
+
 ```
 
 ```{toctree}
 :maxdepth: 2
-:caption: Sections
+:caption: 📖 Les Cours
 :hidden:
 
-Sections/Panorama
-Sections/ATGB
-Sections/BEMN
-Sections/Bio-Cell
-Sections/Bio-Mol
-Sections/Ch-The
-Sections/Physio
-Sections/QPS
-Sections/Sc-Anal
-Sections/VASM
+Cours/Cours_Main
+Cours/ATGB
+Cours/BEMN
+Cours/Bio-Cell
+Cours/Bio-Mol
+Cours/Ch-The
+Cours/Physio
+Cours/QPS
+Cours/Sc-Anal
+Cours/VASM
 ```
 
 ```{toctree}

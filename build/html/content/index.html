@@ -39,6 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/style_book_shell.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/style_flipping_card.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/style_wheel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/bender.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -73,7 +74,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/Pharma-Logo.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Definition" href="Introduction/Definition.html" />
+    <link rel="next" title="Definition" href="Projet/Definition/Definition_Main.html" />
     <link rel="prev" title="La Fac de Pharma" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -551,24 +552,30 @@ document.write(`
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">💎 Le Projet</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Introduction/Definition.html">Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Introduction/Objectifs.html">Objectifs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Introduction/Roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Projet/Definition/Definition_Main.html">Definition</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Projet/Objectifs/Objectifs_Main.html">Objectifs</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Projet/Objectifs/Note.html">✅ Bloc-Note, Organiseur, Journal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projet/Objectifs/Pedagogie.html">🔧 Outil Pédagogique en ligne</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projet/Objectifs/BDD-Connaissances.html">🔧 Base de Donnée de Connaissances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projet/Objectifs/Partage.html">🔧 Plateforme de Partage &amp; de Dialogue</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sections</span></p>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projet/Roadmap/Roadmap_Main.html">Roadmap</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">📖 Les Cours</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Sections/Panorama.html">Panorama</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/ATGB.html">ATGB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/BEMN.html">BEMN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/Bio-Cell.html">Bio Cell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/Bio-Mol.html">Bio Mol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/Ch-The.html">Chimie Thérapeutique</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/Physio.html">Physio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/QPS.html">QPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/Sc-Anal.html">Sciences Analytiques</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sections/VASM.html">VASM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/Cours_Main.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/ATGB.html">ATGB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/BEMN.html">BEMN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/Bio-Cell.html">Bio Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/Bio-Mol.html">Bio Mol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/Ch-The.html">Chimie Thérapeutique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/Physio.html">Physio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/QPS.html">QPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/Sc-Anal.html">Sciences Analytiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cours/VASM.html">VASM</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
@@ -685,7 +692,7 @@ Sur cette page on veut:</p>
       </div>
     </a>
     <a class="right-next"
-       href="Introduction/Definition.html"
+       href="Projet/Definition/Definition_Main.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
